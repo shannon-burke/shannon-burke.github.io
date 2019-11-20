@@ -1,0 +1,39 @@
+#welcome-div {
+    height: 100vh;
+    width: 100%;
+    background-color: #B8B8AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-text {
+    font-size: 30vmin;
+    color: #60747C;
+    font-family: 'Pacifico', cursive;
+}
+
+.animated.delay-custom-welcome {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+#bio-div {
+    height: 100vh;
+    width: 100%;
+    background-color: #60747C;
+    display: flex;
+}
+
+.left-div {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    align-self: center;
+    background-color: #0E1210;
+    color: #D9A774;
+}
+
+#index-link {
+    font-family: 'Pacifico', cursive;
+}

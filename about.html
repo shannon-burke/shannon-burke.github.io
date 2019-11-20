@@ -5,40 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Well, hello there.</title>
+    <title>Welcome</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="css/indexStyle.css">
-
-
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+    <link rel="stylesheet" href="css/aboutStyle.css">
 </head>
 
 <body>
-    <div class="index-background">
-        <div class="container">
-            <div class="row justify-content-md-center" id="welcome-text-div">
-                <div class="col-md-3 col-sm-12" id="well-col">
-                    <h1 id="well-text" class="animated fadeIn text-right">Well,</h1>
-                </div>
-                <div class="col-md-auto col-sm-12" id="hello-col">
-                    <h1 id="hello-text" class="animated fadeInRight delay-1s">hello</h1>
-                </div>
-                <div class="col-md-3 col-sm-12" id="there-col">
-                    <h1 id="there-text" class="animated fadeIn delay-2s">there.</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col justify-content-center" id="enter-button-div">
-                    <a href="about.html"><button class="btn animated fadeInUp delay-3s" id="enter-button">Come on
-                            in</button></a>
-                </div>
-            </div>
-        </div>
+
+    <div id="welcome-div">
+        <h1 id="welcome-text" class="animated flipInX delay-custom-welcom">Welcome</h1>
     </div>
 
+    <div id="bio-div">
+        <div class="left-div" data-aos="fade-right">
+            <h1 id="bio-title">Who am I?</h1>
+        </div>
+        <a href="codeGallery.html">
+            <h1 id="gallery-link">Visit the Gallery</h1>
+        </a>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
