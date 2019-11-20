@@ -1,9 +1,32 @@
 body {
-    background-color: #60747C;
+    background-color: #D9A774;
     color: #232C27;
     font-family: 'Open Sans', sans-serif; 
 }
 
 h5 {
     font-family: 'Pacifico', cursive; 
+}
+
+.card-title {
+    color: #232C27;
+}
+
+a:hover {
+    text-decoration-line: none;
+    color: #D9A774;
+}
+
+a.nav-link {
+    color: #B8B8AA;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+nav {
+    background-color: #60747C;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: whitesmoke;
 }

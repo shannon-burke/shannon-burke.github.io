@@ -7,6 +7,25 @@
     justify-content: center;
 }
 
+#gallery-div {
+    height: 100vh;
+    width: 100%;
+    background-color: #B8B8AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-div {
+    height: 100vh;
+    width: 100%;
+    background-color: #D9A774;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0E1210;
+}
+
 #welcome-text {
     font-size: 30vmin;
     color: #60747C;
@@ -23,6 +42,7 @@
     width: 100%;
     background-color: #60747C;
     display: flex;
+    align-items: center;
 }
 
 .left-div {
@@ -36,4 +56,52 @@
 
 #index-link {
     font-family: 'Pacifico', cursive;
+}
+
+#profile-img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; 
+    font-size: 10vh;
+}
+
+body {
+    color: #232C27;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+#bio {
+    line-height: 150%;
+    text-align: justify;
+    color: #B8B8AA;
+    text-emphasis: bold;
+}
+
+#bio-text-div {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+a {
+    color: #0E1210
+}
+
+a:hover {
+    text-decoration-line: none;
+    color: #60747C;
+}
+
+#gallery-link {
+    color: #232C27;
+}
+
+#gallery-link:hover {
+    color: #60747C;
+}
+
+#gh-link:hover {
+    color: #60747C;
 }
