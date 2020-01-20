@@ -52,12 +52,25 @@ a:hover {
     font-weight: bold;
 }
 
-#title {
+#code-title {
     font-family: 'Bungee Inline', 'Impact', sans-serif;
     font-size: 10.5vw;
     margin-bottom: 3vw; 
     color: #A33327;
 }
+#print-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 9vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+#illustration-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 10vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+
 #description {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.75vw;

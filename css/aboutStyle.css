@@ -61,4 +61,27 @@ a:hover {
     color: #A33327;
     font-size: 5vw;
 }
+#contact {
+    text-align: center;
+}
+#icons {
+    margin-bottom: 10px;
+}
+#icons > a > img {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
 
+
+@media only screen and (max-width: 768px) {
+  #buffer, #green-pip, #red-pip {
+      height: 3vw;
+  }
+  #profile-pic {
+      width: 80vw;
+  }  
+  #shout {
+      font-size: 10vw;
+  }
+}

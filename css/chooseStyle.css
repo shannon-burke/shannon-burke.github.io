@@ -80,3 +80,15 @@ a:hover {
     font-size: 5vw;
     text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+ #galleries {
+     grid-template-columns: auto;
+ }  
+ #galleries > div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 8vw;
+ } 
+}
