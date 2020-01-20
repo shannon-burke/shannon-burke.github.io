@@ -7,55 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techy</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="css/codeGalleryStyle.css">
+
+    <link rel="stylesheet" href="css/galleryStyle.css">
 </head>
 
 <body>
+    <div id="buffer">
+        <div id="red-pip" class="animated slideInLeft slower delay-1s">
+            <div id="green-pip" class="animated slideInLeft slower delay-2s"></div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand navbar-light">
         <a class="navbar-brand" href="./about.html">
             <img src="./images/smb.svg" width="40" height="40" alt="SMB logo">
         </a>
         <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-                <a class="nav-link" href="/codeGallery.html">Code & Web</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href=" #">Print &
-                    Design</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Illustration</a>
-            </li> -->
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
-            </li>
+
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdownMenuLink" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Work
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Code & Web</a>
-                    <a class="dropdown-item" href="#">Design & Print</a>
-                    <a class="dropdown-item" href="#">Illustration</a>
+                    <a class="dropdown-item" href="./codeGallery.html">Code & Web</a>
+                    <a class="dropdown-item" href="./designGallery.html">Design & Print</a>
+                    <a class="dropdown-item" href="./illustrationGallery.html">Illustration</a>
                 </div>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">About me</a>
+            </li>
+
         </ul>
     </nav>
 
     <div class="container">
-        <h1 id="title">Web Design</h1>
-        <div id="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+        <div id="info-div">
+            <h1 id="title">Web Design</h1><br>
+            <div id="description">
+                <p>Since late spring of 2019, I've been diving head first into web design. I graduated in November 2019
+                    and
+                    have a handful of finished products to show for my labor. In my web design I try to keep a balance
+                    of
+                    sleek, simple UI along with fun, unique elements to make my projects memorable. Please, feel free to
+                    visit the live pages below, or take a look at my <a
+                        href="https://github.com/shannon-burke">GitHub</a>
+                    for a little behind the scenes peek at my code.</p>
+            </div>
         </div>
     </div>
 
@@ -79,17 +94,6 @@
         More coming soon!
     </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

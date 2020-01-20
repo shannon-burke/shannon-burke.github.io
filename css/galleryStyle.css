@@ -1,0 +1,115 @@
+body {
+    color: #AD8174;
+    background-color: #222223;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+}
+
+#buffer {
+    background-color: #222223;
+    width: 100%;
+    height: 1vw;
+}
+#green-pip {
+    height: 1vw;
+    width: 100%;
+    margin-right: 0px;
+    background-color: #689775;
+}
+#red-pip {
+    height: 1vw;
+    width: 100%;
+    margin-right: 0px;
+    background-color: #A33327;
+}
+a.nav-link {
+    color: #B8B8AA;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; 
+}
+nav {
+    background-color: #689775;
+    margin-bottom: 10px;
+}
+.dropdown-menu {
+    background-color: #689775;
+    border: none;
+    border-radius: 0px;
+    font-weight: bold;
+}
+.dropdown-item:hover {
+    background-color: #C7493A;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: #C7493A;
+}
+a:hover {
+    text-decoration-line: none;
+    color: #A33327;
+    font-weight: bold;
+}
+
+#title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 10.5vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+#description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75vw;
+    /* line-height: 110%; */
+    text-align: justify;
+    margin-bottom: 2vw;
+}
+#info-div {
+    height: 110vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+#gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #C7493A;
+}
+
+#after-message {
+    width: 100%;
+    background-color: #A33327;
+    color: #AD8174;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+    padding: 3vw;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #gallery {
+        grid-template-columns: auto auto;
+    }
+
+    #after-message {
+        font-size: 8vw;
+        padding: 8vw;
+    }
+
+    #buffer, #green-pip, #red-pip {
+        height: 3vw;
+    }
+
+    #title {
+        font-size: 20vw;
+    }
+    #description {
+        font-size: 5vw;
+        line-height: 115%;
+    }
+}
