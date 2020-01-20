@@ -16,140 +16,67 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand navbar-light">
         <a class="navbar-brand" href="./about.html">
             <img src="./images/smb.svg" width="40" height="40" alt="SMB logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Code</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"" href=" #">Design</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Illustration</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="/codeGallery.html">Code & Web</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href=" #">Print &
+                    Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Illustration</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Work
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Code & Web</a>
+                    <a class="dropdown-item" href="#">Design & Print</a>
+                    <a class="dropdown-item" href="#">Illustration</a>
+                </div>
+            </li>
+        </ul>
     </nav>
-    <div class="container">
-        <div class="card-columns">
-            <div class="card">
-                <img src="./images/crystal-collector.PNG" class="card-img-top" alt="Crystal Collector">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/Crystal-Collector/">
-                        <h5 class="card-title">Crystal Collector</h5>
-                    </a>
-                    <p class="card-text">A fun little JavaScript-powered browser game where the user clicks crystals of
-                        randomly generated values to reach a goal number.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/cat-quiz.PNG" class="card-img-top" alt="Cat Quiz">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/Trivia-Game/">
-                        <h5 class="card-title">Cat Quiz</h5>
-                    </a>
-                    <p class="card-text">A short quiz about cats with dynamically generated questions and answer
-                        buttons.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/friend-finder.PNG" class="card-img-top" alt="The United Federation of Matches">
-                <div class="card-body">
-                    <a href="http://united-federation-of-matches.herokuapp.com/">
-                        <h5 class="card-title">The United Federation of Matches</h5>
-                    </a>
-                    <p class="card-text">A personality quiz for new recruits aboard the USS Enterprise to match them
-                        with another crew member. Away missions are safer when you implement the buddy system, Jim.</p>
-                    <p class="card-text"><small class="text-muted">Under Construction</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/apart.png" class="card-img-top" alt="aPART">
-                <div class="card-body">
-                    <a href="https://apart-app.herokuapp.com/">
-                        <h5 class="card-title">aPart</h5>
-                    </a>
-                    <p class="card-text">A household management application for splitting costs between co-inhabitors.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Collaboration</small></p>
 
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/game-spark.PNG" class="card-img-top" alt="Game Spark">
-                <div class="card-body">
-                    <a href="https://amazing-people.herokuapp.com/">
-                        <h5 class="card-title">Game Spark</h5>
-                    </a>
-                    <p class="card-text">An app for board game enthusiasts to meet and match with other users with the
-                        intent to form gaming groups. Fully functional with user credentials, matching, and responsive
-                        design.</p>
-                    <p class="card-text"><small class="text-muted">Under Construction | Collaboration</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/giphy.PNG" class="card-img-top" alt="Giphy API">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/giphy-api-assignment/">
-                        <h5 class="card-title">Giphy .gif Generator</h5>
-                    </a>
-                    <p class="card-text">Make some buttons, generate some gifs, have a good time. A simple single-page
-                        site that searches for GIFs using the Giphy API.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/stemm.PNG" class="card-img-top" alt="Stemm">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/Project-1">
-                        <h5 class="card-title">Stemm</h5>
-                    </a>
-                    <p class="card-text">Users answer a few quick questions. to see which houseplant matches their life
-                        style best. Features dynamically created content, use of the the Google Maps API, and a polished
-                        UI.</p>
-                    <p class="card-text"><small class="text-muted">Under Construction | Collaboration</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/pet-the-dog.jpg" class="card-img-top" alt="Pet the dogs">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/pet-the-dogs">
-                        <h5 class="card-title">Pet the Dogs!</h5>
-                    </a>
-                    <p class="card-text">Pet all the dogs. But, be careful, they get jealous if you pet one dog a second
-                        time before you pet all the dogs. If that happens, you'll have to start all over!</p>
-                    <p class="card-text"><small class="text-muted">Under Construction</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/psychic-game.PNG" class="card-img-top" alt="Psychic Game">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/Psychic-Game/">
-                        <h5 class="card-title">Psychic Game</h5>
-                    </a>
-                    <p class="card-text">Users try to guess the randomly generated letter the computer has chosen.
-                        Interface is made as simple as possible by the capturing of keystrokes, eliminating the need for
-                        the user to click anywhere or select anything at all in order to play!</p>
-                </div>
-            </div>
-            <!-- <div class="card">
-                <img src="./images/RPS.PNG" class="card-img-top" alt="RPS">
-                <div class="card-body">
-                    <a href="https://shannon-burke.github.io/rps-multiplayer">
-                        <h5 class="card-title">Rock, Paper, Scissors!</h5>
-                    </a>
-                    <p class="card-text">Simple multi-player game of "rock, paper, scissors"</p>
-                    <p class="card-text"><small class="text-muted">Under Construction</small></p>
-                </div>
-            </div> -->
+    <div class="container">
+        <h1 id="title">Web Design</h1>
+        <div id="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
         </div>
+    </div>
+
+    <div id="gallery">
+        <div id="thumbnail1"><a href="https://shannon-burke.github.io/Psychic-Game/" target="_blank"><img
+                    src="images/PsychicGame.svg"></a></div>
+        <div id="thumbnail2"><a href="http://apart-app.herokuapp.com" target="_blank"><img src="images/Apart.svg"></a>
+        </div>
+        <div id="thumbnail3"><a href="https://shannon-burke.github.io/Crystal-Collector/" target="_blank"><img
+                    src="images/CrystalCollector.svg"></a></div>
+        <div id="thumbnail4"><a href="https://amazing-people.herokuapp.com/" target="_blank"><img
+                    src="images/GameSpark.svg"></a></div>
+        <div id="thumbnail5"><a href="https://shannon-burke.github.io/tictactoe/" target="_blank"><img
+                    src="images/TicTacToe.svg"></a>
+        </div>
+        <div id="thumbnail6"><a href="https://shannon-burke.github.io/Project-1/" target="_blank"><img
+                    src="images/Stemm.svg"></a></div>
+    </div>
+
+    <div id="after-message">
+        More coming soon!
     </div>
 
 
