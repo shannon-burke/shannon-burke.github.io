@@ -91,9 +91,6 @@ a:hover {
     grid-template-columns: auto auto auto auto;
     background-color: #C7493A;
 }
-.thumbnail-img {
-    max-width: 25vw;
-}
 
 #after-message {
     width: 100%;
@@ -127,5 +124,14 @@ a:hover {
     #description {
         font-size: 5vw;
         line-height: 115%;
+    }
+    .thumbnail-img {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .thumbnail-img {
+        width: 24.73vw;
     }
 }
