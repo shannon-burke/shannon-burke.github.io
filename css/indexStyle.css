@@ -9,36 +9,42 @@ body {
     align-items: center;
 }
 
+#welcome-text-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+}
 #well-text {
-    font-size: 10vmin;
+    font-size: 6vw;
     color: #689775;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#well-col {
+#well-div {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 #hello-text {
-    font-size: 21vmin;
+    font-size: 14vw;
     color: #A33327;
     font-family: 'Bungee Inline', 'Impact', sans-serif; 
 }
-#hello-col {
+#hello-div {
     text-align: center;
 }
 #there-text {
-    font-size: 10vmin;
+    font-size: 6vw;
     color: #689775;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#there-col {
+#there-div {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 #enter-button-div {
+    margin-top: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -52,23 +58,31 @@ body {
     font-weight: bold;
     color: #917164;
 }
+a:hover {
+    text-decoration: none;
+}
 
-
-@media (max-width: 991.98px) {
-    #well-col {
+@media only screen and (max-width: 991px) {
+    #welcome-text-div {
+        grid-template-columns: auto;
+    }
+    #well-div {
         justify-content: center;
     }
-    #there-col {
+    #there-div {
         justify-content: center;
     }
     #well-text {
-        font-size: 15vw;
+        font-size: 12vw;
+    }
+    #hello-text {
+        font-size: 20vw;
     }
     #there-text {
-        font-size: 15vw;
+        font-size: 12vw;
     }
     #enter-button {
-        font-size: 5vw;
+        font-size: 4vw;
         margin-top: 5vw;
     }
 }
