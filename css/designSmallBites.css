@@ -52,19 +52,7 @@ a:hover {
     font-weight: bold;
 }
 
-#code-title {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
-    font-size: 10.5vw;
-    margin-bottom: 3vw; 
-    color: #A33327;
-}
-#print-title {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
-    font-size: 9vw;
-    margin-bottom: 3vw; 
-    color: #A33327;
-}
-#illustration-title {
+#small-bites-title {
     font-family: 'Bungee Inline', 'Impact', sans-serif;
     font-size: 10vw;
     margin-bottom: 3vw; 
@@ -85,53 +73,18 @@ a:hover {
     justify-content: center;
     flex-direction: column; 
 }
-#gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #C7493A;
+
+.project-img {
+    max-width: 100%;
+    margin: 5px;
 }
-
-#after-message {
-    width: 100%;
-    background-color: #A33327;
-    color: #AD8174;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5vw;
-    padding: 3vw;
-}
-
-
-
 
 @media only screen and (max-width: 768px) {
-    #gallery {
-        grid-template-columns: auto auto;
-    }
-
-    #after-message {
-        font-size: 8vw;
-        padding: 8vw;
-    }
-
     #buffer, #green-pip, #red-pip {
         height: 3vw;
-    }
-
-    #title {
-        font-size: 20vw;
     }
     #description {
         font-size: 5vw;
         line-height: 115%;
     }
-    .thumbnail-img {
-        width: 50vw;
-    }
 }
-
-@media only screen and (min-width: 769px) {
-    .thumbnail-img {
-        width: 24.73vw;
-    }
-} 
