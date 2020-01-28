@@ -110,6 +110,13 @@ a:hover {
     margin: 5px;
 }
 
+#back {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 3vw;
+}
+
 @media only screen and (max-width: 768px) {
     #buffer, #green-pip, #red-pip {
         height: 3vw;
