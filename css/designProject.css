@@ -88,6 +88,30 @@ a:hover {
     margin-bottom: 3vw; 
     color: #A33327;
 }
+#logos-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 10vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+#bestiary-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 10vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+#hijinks-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 5vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+.larger-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 10vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
 
 #description {
     font-family: 'Open Sans', sans-serif;
