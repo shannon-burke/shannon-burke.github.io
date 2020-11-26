@@ -112,6 +112,26 @@ a:hover {
     margin-bottom: 3vw; 
     color: #A33327;
 }
+.smaller-title {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 6vw;
+    margin-bottom: 3vw; 
+    color: #A33327;
+}
+.smaller-subtitle {
+    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-size: 4vw;
+    /* margin-bottom: 1vw;  */
+    color: #222223;
+}
+.subtitle-div {
+    background-color:  #689775;
+    color: #222223;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
 
 #description {
     font-family: 'Open Sans', sans-serif;
@@ -134,12 +154,24 @@ a:hover {
     margin: 5px;
 }
 
+.mailed-img {
+    max-width: 80%;
+}
+
 #back {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5vw;
     text-align: center;
     margin: 3vw;
 }
+
+.countdown-img {
+    max-width: 40%;
+}
+
+/* #piggy:hover {
+    content: src('../images/graphics/mailAds/piggyBank2.jpg');
+} */
 
 @media only screen and (max-width: 768px) {
     #buffer, #green-pip, #red-pip {
@@ -148,5 +180,14 @@ a:hover {
     #description {
         font-size: 5vw;
         line-height: 115%;
+    }
+    .mailed-img {
+        max-width: 100%;
+    }
+    .countdown-img {
+        max-width: 100%;
+    }
+    .smaller-subtitle {
+        font-size: 10vw;
     }
 }
