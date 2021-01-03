@@ -27,6 +27,7 @@ body {
 #hello-text {
     font-size: 14vw;
     color: #A33327;
+    text-shadow: 10px 10px #C7493A;
     font-family: 'Bungee Inline', 'Impact', sans-serif; 
 }
 #hello-div {
@@ -55,8 +56,7 @@ body {
     font-size: 2vw;
 }
 #enter-button:hover {
-    font-weight: bold;
-    color: #917164;
+    text-shadow: 2px 2px #917164;
 }
 a:hover {
     text-decoration: none;

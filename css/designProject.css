@@ -48,8 +48,9 @@ a {
 }
 a:hover {
     text-decoration-line: none;
-    color: #A33327;
-    font-weight: bold;
+    color: #C7493A;
+    text-shadow: 2px 2px #A33327;
+    
 }
 
 #small-bites-title {
@@ -150,9 +151,13 @@ a:hover {
 
 .project-img {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 90vh;
     margin: 5px;
 }
+
+/* .poster-img {
+    margin-bottom: 6vh;
+} */
 
 .mailed-img {
     max-width: 80%;
@@ -166,6 +171,10 @@ a:hover {
 }
 
 .countdown-img {
+    max-width: 32%;
+}
+
+.publication-img {
     max-width: 40%;
 }
 
