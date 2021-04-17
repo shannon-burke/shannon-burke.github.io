@@ -1,12 +1,12 @@
 body {
-    color: #AD8174;
-    background-color: #222223;
-    font-family: 'Open Sans', sans-serif; 
+    color: #333e44;
+    background-color: #e2e3e2;
+    font-family: 'regulator-nova', sans-serif; 
     text-align: center;
 }
 
 #buffer {
-    background-color: #222223;
+    background-color: #e2e3e2;
     width: 100%;
     height: 1vw;
 }
@@ -14,53 +14,47 @@ body {
     height: 1vw;
     width: 100%;
     margin-right: 0px;
-    background-color: #689775;
+    background-color: #2d818f;
 }
 #red-pip {
     height: 1vw;
     width: 100%;
     margin-right: 0px;
-    background-color: #A33327;
+    background-color: #942229;
 }
 a.nav-link {
-    color: #B8B8AA;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold; 
+    color: #333e44;
+    font-family: 'regulator-nova', sans-serif;
+    font-weight: 300; 
+    font-style: normal;
 }
-nav {
-    background-color: #689775;
+.navbar {
+    color: #333e44;
+    background-color: #2d818f;
     margin-bottom: 10px;
 }
 .dropdown-menu {
-    background-color: #689775;
+    background-color: #2d818f;
     border: none;
     border-radius: 0px;
     font-weight: bold;
 }
 .dropdown-item:hover {
-    background-color: #C7493A;
+    background-color: #d89846;
 }
-
-
-a {
-    text-decoration-line: none;
-    color: #C7493A;
-}
-a:hover {
-    text-decoration-line: none;
-    color: #A33327;
-    font-weight: bold;
+#smb-logl {
+    margin-left: 3px;
 }
 
 #profile-pic {
     margin-top: 3vw;
     margin-bottom: 3vw;
-    width: 25vw;
+    width: 33vw;
 }
 #shout {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
-    color: #A33327;
-    font-size: 5vw;
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
+    color: #942229;
+    font-size: 5em;
 }
 #contact {
     text-align: center;
@@ -84,7 +78,4 @@ a:hover {
       width: 100%;
       margin: auto;
   }  
-  #shout {
-      font-size: 10vw;
-  }
 }
