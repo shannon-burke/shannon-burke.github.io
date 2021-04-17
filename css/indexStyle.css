@@ -79,12 +79,12 @@ a:hover {
         grid-template-columns: auto;
     }
     #well-div {
-        width: 90vw; 
-        justify-content: start;
+        width: 100%; 
+        justify-content: flex-end;
     }
     #there-div {
-        width: 90vw;
-        justify-content: end;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     #well-text {
