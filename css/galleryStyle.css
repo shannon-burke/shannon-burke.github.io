@@ -1,12 +1,12 @@
 body {
-    color: #AD8174;
-    background-color: #222223;
-    font-family: 'Open Sans', sans-serif; 
+    color: #333e44;
+    background-color: #e2e3e2;
+    font-family: 'regulator-nova', sans-serif; 
     text-align: center;
 }
 
 #buffer {
-    background-color: #222223;
+    background-color: #e2e3e2;
     width: 100%;
     height: 1vw;
 }
@@ -14,67 +14,74 @@ body {
     height: 1vw;
     width: 100%;
     margin-right: 0px;
-    background-color: #689775;
+    background-color: #2d818f;
 }
 #red-pip {
     height: 1vw;
     width: 100%;
     margin-right: 0px;
-    background-color: #A33327;
+    background-color: #942229;
 }
 a.nav-link {
-    color: #B8B8AA;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold; 
+    color: #333e44;
+    font-family: 'regulator-nova', sans-serif;
+    font-weight: 300; 
+    font-style: normal;
 }
-nav {
-    background-color: #689775;
+.navbar {
+    color: #333e44;
+    background-color: #2d818f;
     margin-bottom: 10px;
 }
 .dropdown-menu {
-    background-color: #689775;
+    background-color: #2d818f;
     border: none;
     border-radius: 0px;
     font-weight: bold;
 }
 .dropdown-item:hover {
-    background-color: #C7493A;
+    background-color: #d89846;
+}
+#smb-logl {
+    margin-left: 3px;
 }
 
 
 a {
     text-decoration-line: none;
-    color: #C7493A;
+    color: #2d818f;
 }
 a:hover {
     text-decoration-line: none;
-    color: #A33327;
-    font-weight: bold;
+    color: #d89846;
 }
 
 #code-title {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
     font-size: 10.5vw;
     margin-bottom: 3vw; 
-    color: #A33327;
+    color: #942229;
 }
 #print-title {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
     font-size: 9vw;
     margin-bottom: 3vw; 
-    color: #A33327;
+    color: #942229;
 }
 #illustration-title {
-    font-family: 'Bungee Inline', 'Impact', sans-serif;
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
     font-size: 10vw;
     margin-bottom: 3vw; 
-    color: #A33327;
+    color: #942229;
 }
 
 #description {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.75vw;
-    /* line-height: 110%; */
+    font-family: 'regulator-nova', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+    /* letter-spacing: 1px; */
+    line-height: 120%;
     text-align: justify;
     margin-bottom: 2vw;
 }
@@ -89,21 +96,48 @@ a:hover {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #C7493A;
+    background-color: #d89846;
 }
 
 #after-message {
     width: 100%;
-    background-color: #A33327;
-    color: #AD8174;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #2d818f;
+    color: #e2e3e2;
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
     font-size: 5vw;
     padding: 3vw;
 }
 
 
+.modal-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 4px;
+}
+.modal-carousel-img {
+    max-height: 100vh;
+}
+.modal {
+    background: #e2e3e2;
+    color: #333e44;
+    /* font-size: 2em; */
+}
+.modal-title {
+    font-family: 'acier-bat-noir', 'Impact', sans-serif;
+    font-size: 2em;
+}
+.modal-header {
+    background-color: #2d818f;
+    color: #e2e3e2;
+}
+.modal-footer {
+    /* background-color: #2d818f; */
+    font-family: 'regulator-nova', sans-serif;
+    text-align: right;
+}
 
 
+/* small screen */
 @media only screen and (max-width: 768px) {
     #gallery {
         grid-template-columns: auto auto;
@@ -121,17 +155,20 @@ a:hover {
     #title {
         font-size: 20vw;
     }
-    #description {
-        font-size: 5vw;
+    /* #description {
+        font-size: 16em;
         line-height: 115%;
-    }
+    } */
     .thumbnail-img {
-        width: 50vw;
+        max-width: 100%;
     }
 }
-
+/* normal screen */
 @media only screen and (min-width: 769px) {
     .thumbnail-img {
-        width: 24.73vw;
+        max-width: 100%;
+    }
+    .modal-img-sm {
+        max-width: 25%;
     }
 } 

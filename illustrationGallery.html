@@ -2,95 +2,225 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Artsy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Artsy</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/hlq5iyf.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/galleryStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <link rel="stylesheet" href="css/galleryStyle.css">
 </head>
 
 <body>
-    <div id="buffer">
-        <div id="red-pip" class="animated slideInLeft slower delay-1s">
-            <div id="green-pip" class="animated slideInLeft slower delay-2s"></div>
-        </div>
+  <div id="buffer">
+    <div id="red-pip" class="animated slideInLeft slower delay-1s">
+      <div id="green-pip" class="animated slideInLeft slower delay-2s"></div>
     </div>
-    <nav class="navbar navbar-expand navbar-light">
-        <a class="navbar-brand" href="./index.html">
-            <img src="./images/smb.svg" width="40" height="40" alt="SMB logo">
-        </a>
-        <ul class="navbar-nav ml-auto">
+  </div>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Work
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="./codeGallery.html">Code & Web</a>
-                    <a class="dropdown-item" href="./designGallery.html">Design & Print</a>
-                    <a class="dropdown-item" href="./illustrationGallery.html">Illustration</a>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">About me</a>
-            </li>
-
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/smb.svg" width="40" height="40" alt="SMB logo" id="smb-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./codeGallery.html">Code & Web</a></li>
+              <li><a class="dropdown-item" href="./designGallery.html">Design & Print</a></li>
+              <li><a class="dropdown-item" href="./illustrationGallery.html">Illustration</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Me</a>
+          </li>
         </ul>
-    </nav>
-
-    <div class="container">
-        <div id="info-div">
-            <h1 id="illustration-title">Illustration</h1><br>
-            <div id="description">
-                <p>I've loved to draw for as long as I can remember. I graduated from MWSU in 2016 with 2
-                    BFAs in graphic design and illustration. I pride myself on my versatility in style and aim to
-                    satisfy the needs of any clients.</p>
-            </div>
-        </div>
+      </div>
     </div>
+  </nav>
 
-    <div id="gallery">
-        <div id="thumbnail1"><a href="./illustrationBestiary.html"><img src="./images/illustration/thumbbestiary.png"
-                    alt="Bestiary" class="thumbnail-img"></a></div>
-        <div id="thumbnail2"><a href="./illustrationWitches.html"><img
-                    src="./images/illustration/WitchesFamiliars/inktober1.png" alt="Witches and Familiars series"
-                     class="thumbnail-img"></a></div>
-        <div id="thumbnail3"><a href="./illustrationHijinks.html"><img
-                    src="./images/illustration/thumbhijinksposter.png" alt="Hijinks & Handlebars Arc Poster"
-                    class="thumbnail-img"></a></div>
-        <div id="thumbnail4"><a href="./illustrationLLL.html"><img src="./images/illustration/thumblavalamplady.jpg"
-                    alt="Lava Lamp Lady" class="thumbnail-img"></a>
+  <div class="container">
+    <div id="info-div">
+      <h1 id="illustration-title">Illustration</h1><br>
+      <div id="description">
+        <p>I've loved to draw for as long as I can remember. I graduated from MWSU in 2016 with 2
+          BFAs in graphic design and illustration. I pride myself on my versatility in style for unique client commissions, personal projects, and marketable stock illustrations.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- LLL Modal -->
+  <div class="modal fade" id="LLLModal" tabindex="-1" aria-labelledby="LLLModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LLLModalLabel">Lava Lamp Lady</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div id="thumbnail5"><a href="./illustrationNadia.html"><img src="./images/illustration/thumbnadia.png"
+        <div class="modal-body">
+          <img src="./images/illustration/lavalamplady.jpg" class="modal-img" alt="Lava Lamp Lady">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bestiary Modal -->
+  <div class="modal fade" id="BestiaryModal" tabindex="-1" aria-labelledby="BestiaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="BestiaryModalLabel">Bestiary</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+            <p>Illustrations from a short booklet about mythological creatures.</p>
+          </div>
+        <div class="modal-body">
+          <img src="./images/illustration/bestiary1.png" class="modal-img">
+          <img src="./images/illustration/bestiary2.png" class="modal-img">
+          <img src="./images/illustration/bestiary3.png" class="modal-img">
+          <img src="./images/illustration/bestiary4.png" class="modal-img">
+          <img src="./images/illustration/bestiary5.png" class="modal-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Witches Modal -->
+  <div class="modal fade" id="WitchesModal" tabindex="-1" aria-labelledby="WitchesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="WitchesModalLabel">Witches & Their Familiars</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+            <p></p>This illustration began as a digital version of the 2020 #inktober prompt list, but with the added
+            restriction of depicting a witch and their familiar in every image. Composition and color was the focus of
+            this series.</p>
+          </div>
+        <div class="modal-body">
+          <img src="./images/illustration/WitchesFamiliars/inktober1.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober2.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober3.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober10.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober11.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober12.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober13.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober14.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober15.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober16.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober17.png" class="modal-img modal-img-sm">
+          <img src="./images/illustration/WitchesFamiliars/inktober18.png" class="modal-img modal-img-sm">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Veggies Modal -->
+  <div class="modal fade" id="VeggiesModal" tabindex="-1" aria-labelledby="VeggiesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="VeggiesModalLabel">Vegetables Vector Pack</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/illustration/Veggies.png" class="modal-img" alt="Veggies">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Modal -->
+  <div class="modal fade" id="ExploreModal" tabindex="-1" aria-labelledby="ExploreModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ExploreModalLabel">Explore More Series</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/illustration/explore1.png" class="modal-img">
+          <img src="./images/illustration/explore2.png" class="modal-img">
+          <img src="./images/illustration/explore3.png" class="modal-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hijinks Modal -->
+  <div class="modal fade" id="HijinksModal" tabindex="-1" aria-labelledby="HijinksModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="HijinksModalLabel">Hijinks & Handlebars Podcast Poster</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+            <p>Hijinks & Handlebars is an actual play Kids on Bikes podcast hosted by Queuetimes with a cast of child and
+              teen characters having misadventures in their spooky small town. (Sometimes even fighting bullies who turn
+              into Godzilla-like monsters with their dream powers.) Check it out <a
+                href="https://www.youtube.com/playlist?list=PLHVibqh7yRwoA4NheA1GQSHRO0NsVB2Zj">here.</a></p>
+          </div>
+        <div class="modal-body">
+          <img src="./images/illustration/hijinksposter.png" class="modal-img">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery">
+    <div><img src="./images/illustration/WitchesFamiliars/inktober1.png" alt="Witches and Familiars series"
+        class="thumbnail-img" data-bs-toggle="modal" data-bs-target="#WitchesModal"></div>
+    <div><img src="./images/illustration/thumbhijinksposter.png" alt="Hijinks & Handlebars Arc Poster"
+        class="thumbnail-img" data-bs-toggle="modal" data-bs-target="#HijinksModal"></div>
+    <div><img src="./images/illustration/thumbexplore.PNG" alt="Explore More" class="thumbnail-img"
+        data-bs-toggle="modal" data-bs-target="#ExploreModal"></div>
+    <div><img src="./images/illustration/thumblavalamplady.jpg" alt="Lava Lamp Lady" class="thumbnail-img"
+        data-bs-toggle="modal" data-bs-target="#LLLModal"></div>
+    <div><img src="./images/illustration/thumbveggies.png" alt="Vegetables Vector Pack" class="thumbnail-img"
+        data-bs-toggle="modal" data-bs-target="#VeggiesModal"></div>
+    <div><img src="./images/illustration/thumbbestiary.png" alt="Bestiary" class="thumbnail-img" data-bs-toggle="modal"
+        data-bs-target="#BestiaryModal"></div>
+
+
+    <!-- <div id="thumbnail5"><a href="./illustrationNadia.html"><img src="./images/illustration/thumbnadia.png"
                     alt="Nadia" class="thumbnail-img"></a></div>
         <div id="thumbnail6"><a href="./illustrationSidewinder.html"><img
-                    src="./images/illustration/thumbsidewinder.png" alt="Sidewinder Concept" class="thumbnail-img"></a>
-        </div>
-    </div>
+                    src="./images/illustration/thumbsidewinder.png" alt="Sidewinder Concept" class="thumbnail-img"></a></div> -->
+  </div>
 
-    <div id="after-message">
-        Constantly creating.
-    </div>
+  <div id="after-message">
+    Constantly creating.
+  </div>
 
 </body>
 

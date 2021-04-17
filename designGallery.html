@@ -7,19 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Balanced</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/hlq5iyf.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -33,62 +32,302 @@
             <div id="green-pip" class="animated slideInLeft slower delay-2s"></div>
         </div>
     </div>
-    <nav class="navbar navbar-expand navbar-light">
-        <a class="navbar-brand" href="./index.html">
-            <img src="./images/smb.svg" width="40" height="40" alt="SMB logo">
-        </a>
-        <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Work
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="./codeGallery.html">Code & Web</a>
-                    <a class="dropdown-item" href="./designGallery.html">Design & Print</a>
-                    <a class="dropdown-item" href="./illustrationGallery.html">Illustration</a>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">About me</a>
-            </li>
-
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/smb.svg" width="40" height="40" alt="SMB logo" id="smb-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./codeGallery.html">Code & Web</a></li>
+                            <li><a class="dropdown-item" href="./designGallery.html">Design & Print</a></li>
+                            <li><a class="dropdown-item" href="./illustrationGallery.html">Illustration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="container">
         <div id="info-div">
             <h1 id="print-title">Graphic Design</h1><br>
             <div id="description">
-                <p>I've had a passion for design and print for most of my life. I'm skilled in the Adobe Creative Suite--namely Photoshop, Illustrator, and InDesign--but I'm always interested in new softward and methods! I graduated from MWSU in 2016 with 2
-                    BFAs in graphic design and illustration. I currently work for a retail marketing company based out of the Kansas City area.</p>
+                <p>I've had a passion for design and print for most of my life. I'm skilled in the Adobe Creative
+                    Suite--namely Photoshop, Illustrator, and InDesign--but I'm always interested in new software and
+                    methods. I graduated from MWSU in 2016 with 2
+                    BFAs in graphic design and illustration and currently work for a retail marketing company based out
+                    of the Kansas City area doing print, social media, and web based design.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications Modal -->
+    <div class="modal fade" id="PublicationsModal" tabindex="-1" aria-labelledby="PublicationsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PublicationsModalLabel">Publications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Since early 2020 I've been working with a large client base of retail store on their seasonal
+                    mailed publications. Working directly with store owners has been a great (and sometimes trying)
+                    experience!</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/publications/PublicationPhotos1.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/publications/PublicationPhotos2.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/publications/PublicationPhotos3.jpg" class="modal-img modal-img-sm">
+                    <!-- <img src="./images/graphics/publications/PublicationPhotos4.jpg" class="modal-img modal-img-sm"> -->
+                    <img src="./images/graphics/publications/DeesSpringiFold.jpg" class="modal-img">
+                    <img src="./images/graphics/publications/DeesSpringiFold2.jpg" class="modal-img">
+                    <img src="./images/graphics/publications/BestSpreads2.jpg" class="modal-img">
+                    <img src="./images/graphics/publications/BestSpreads3.jpg" class="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Modal -->
+    <div class="modal fade" id="SocialModal" tabindex="-1" aria-labelledby="SocialModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SocialModalLabel">Social Media Images</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>In my current position a large portion of the client base aren't exactly tech-savvy, so any
+                    social media assets I create for client feeds have to speak for themselves.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/socialMedia/iBookexamples11.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/iBookexamples6.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/iBookexamples8.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/AprMayBB.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/FebMarBB.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/BlackFridayGirl.jpg" class="modal-img modal-img-sm">
+
+                    <img src="./images/graphics/socialMedia/TigerDay3.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/SlinkyDay3.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/SMTK/JewelDay.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/SMTK/WomensDay.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/SMTK/BeverageDay.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/SMTK/CandleDay.jpg" class="modal-img modal-img-sm">
+
+                    <img src="./images/graphics/socialMedia/Countdown to Christmas/Countdown13.jpg"
+                        class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/Countdown to Christmas/Countdown16.jpg"
+                        class="modal-img modal-img-sm">
+                    <img src="./images/graphics/socialMedia/Countdown to Christmas/Countdown21.jpg"
+                        class="modal-img modal-img-sm">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Krei Modal -->
+    <div class="modal fade" id="KreiModal" tabindex="-1" aria-labelledby="KreiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="KreiModalLabel">Krei Creative Supplies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Krei is a creative supplies packaging project completed in 2015. Krei's target audience are
+                    young creatives drawn to simplicity and boldness. The brightly colored textures were all hand
+                    painted and combined with geometric shapes for a stark contrast.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/Krei1.jpg" class="modal-img">
+                    <img src="./images/graphics/Krei2.jpg" class="modal-img">
+                    <img src="./images/graphics/Krei3.jpg" class="modal-img">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Mailed Modal -->
+    <div class="modal fade" id="MailedModal" tabindex="-1" aria-labelledby="MailedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MailedModalLabel">Mailed Promotions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>I've had the opportunity to work on a variety of promotional event advertisements, mostly in
+                    the form of flat cards. These are some of my faves!</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/mailAds/piggyBank.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/FallAnniv.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/scratchOff.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/jump.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/BF.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/VdayB.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/SepOctBB.jpg" class="modal-img">
+                    <img src="./images/graphics/mailAds/DeesCover.jpg" class="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Posters Modal -->
+    <div class="modal fade" id="PostersModal" tabindex="-1" aria-labelledby="PostersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PostersModalLabel">Flyers & Posters</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Assorted posters, flyers, infographics, and window decals.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/posters/AprilFoolsDayPoster.jpg" class="modal-img">
+                    <img src="./images/graphics/posters/PetDayPoster.jpg" class="modal-img">
+                    <img src="./images/graphics/posters/sobInfographic.jpg" class="modal-img">
+                    <img src="./images/graphics/posters/HalfBdayCling.jpg" class="modal-img">
+                    <img src="./images/graphics/posters/checkIn.jpg" class="modal-img">
+                    <img src="./images/graphics/helvetica.png" class="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logos Modal -->
+    <div class="modal fade" id="LogosModal" tabindex="-1" aria-labelledby="LogosModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LogosModalLabel">Logos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Logos, emblems, and small graphic assets I've created for various clients and projects.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/logochampionDiamond.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoChampionScribble.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoChampionSunset.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoChompDeli.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoGoodWords.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoMickelsenTeam.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/LogoVibrationShift.jpg" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/logoFirewoodCamps.png" class="modal-img modal-img-sm">
+                    <img src="./images/graphics/LogoPlanBoutique.png" class="modal-img modal-img-sm">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Small Bites Modal -->
+    <div class="modal fade" id="SmallBitesModal" tabindex="-1" aria-labelledby="SmallBitesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SmallBitesModalLabel">Small Bites Panini Recipes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Small Bites was a collaborative project I participated in as a student in 2015, where each
+                    team member contibuted several full page spreads as well as individual elements throughout the
+                    entier book.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/smallbites1.png" class="modal-img">
+                    <img src="./images/graphics/smallbites2.png" class="modal-img">
+                    <img src="./images/graphics/smallbites3.png" class="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Umami Modal -->
+    <div class="modal fade" id="UmamiModal" tabindex="-1" aria-labelledby="UmamiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="UmamiModalLabel">Umami</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>Umami is a mock restaurant branding project I worked on in 2013. For the visual elements of
+                    this project I wanted to combine a blend of contemporary Japanese street culture along side some of
+                    the more traditional elements typically associated with sushi.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/umami1.jpg" class="modal-img">
+                    <img src="./images/graphics/umami2.jpg" class="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- American Indian Museum Modal -->
+    <div class="modal fade" id="MuseumModal" tabindex="-1" aria-labelledby="MuseumLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MuseumModalLabel">American Indian Museum Cards</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <p></p>During 2015 and 2016 I interned for the Saint Joseph Museums and. While there, I created this small informational card for patrons.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/graphics/Museum1.png" class="modal-img">
+                    <img src="./images/graphics/Museum2.png" class="modal-img">
+                </div>
             </div>
         </div>
     </div>
 
     <div id="gallery">
-        <div id="thumbnail1"><a href="./designPublications.html"><img src="./images/graphics/thumbPublications.jpg" 
-            alt="Publications" class="thumbnail-img"></a></div>
-        <div id="thumbnail2"><a href="./designSocialMedia.html"><img src="./images/graphics/thumbSocialMedia.png" 
-            alt="Social Media" class="thumbnail-img"></a></div>
-        <div id="thumbnail3"><a href="./designKrei.html"><img src="./images/graphics/thumbkrei.jpg"
-            alt="Krei Creative Supplies" class="thumbnail-img"></a></div>
-        <div id="thumbnail4"><a href="./designMailedPromotions.html"><img src="./images/graphics/thumbMailAds.jpg"
-            alt="Mail Promotions" class="thumbnail-img"></a></div>
-        <div id="thumbnail5"><a href="./designPosters.html"><img src="./images/graphics/thumbposters.jpg"
-            alt="Selected Posters" class="thumbnail-img"></a></div>
-        <div id="thumbnail6"><a href="./designLogos.html"><img src="./images/graphics/thumblogos.png"
-            alt="Selected Logos" class="thumbnail-img"></a></div>
-        <div id="thumbnail7"><a href="./designGreetingCards.html"><img src="./images/graphics/thumbGreetingCards.jpg"
-            alt="Greeting Cards" class="thumbnail-img"></a></div>  
-        <div id="thumbnail8"><a href="./designSmallBites.html"><img src="./images/graphics/thumbsmallbites.png"
-            alt="Small Bites" class="thumbnail-img"></a></div>
-        <div id="thumbnail9"><a href="./designUmami.html"><img src="./images/graphics/thumbumami.jpg" 
-            alt="Umami" class="thumbnail-img"></a></div>  
-        <div id="thumbnail10"><a href="./designMuseum.html"><img src="./images/graphics/thumbmuseum.png"
-            alt="Museum Rack Card" class="thumbnail-img"></a></div>
+        <div><img src="./images/graphics/thumbPublications.jpg" alt="Publications" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#PublicationsModal"></div>
+        <div><img src="./images/graphics/thumbSocialMedia.png" alt="Social Media" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#SocialModal"></div>
+        <div><img src="./images/graphics/thumbkrei.jpg" alt="Krei Creative Supplies" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#KreiModal"></div>
+        <div><img src="./images/graphics/thumbMailAds.jpg" alt="Mail Promotions" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#MailedModal"></div>
+        <div><img src="./images/graphics/thumbposters.jpg" alt="Selected Posters" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#PostersModal"></div>
+        <div><img src="./images/graphics/thumblogos.png" alt="Selected Logos" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#LogosModal"></div>
+        <!-- <div><a href="./designGreetingCards.html"><img src="./images/graphics/thumbGreetingCards.jpg"
+            alt="Greeting Cards" class="thumbnail-img"></a></div>   -->
+        <div><img src="./images/graphics/thumbsmallbites.png" alt="Small Bites" class="thumbnail-img"
+                data-bs-toggle="modal" data-bs-target="#SmallBitesModal"></div>
+        <div><img src="./images/graphics/thumbumami.jpg" alt="Umami" class="thumbnail-img" data-bs-toggle="modal"
+                data-bs-target="#UmamiModal"></div>
+        <div><img src="./images/graphics/thumbmuseum.png" alt="Museum Rack Card"
+                    class="thumbnail-img" data-bs-toggle="modal"
+                    data-bs-target="#MuseumModal"></div>
     </div>
 
     <div id="after-message">
