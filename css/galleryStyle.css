@@ -86,7 +86,7 @@ a:hover {
     margin-bottom: 2vw;
 }
 #info-div {
-    height: 110vh;
+    min-height: 110vh;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -113,17 +113,20 @@ a:hover {
 
 
 .modal-img {
-    max-width: 100%;
-    max-height: 100%;
     margin-bottom: 4px;
+    /* filter: drop-shadow(0px 0px 1px grey); */
 }
 .modal-img-sm {
     width: 25%;
     margin-bottom: 4px;
+    /* filter: drop-shadow(0px 0px 1px grey); */
 }
-.modal-carousel-img {
+.mock-img {
+    filter: drop-shadow(0px 0px 1px grey);
+}
+/* .modal-carousel-img {
     max-height: 100vh;
-}
+} */
 .modal {
     background: #e2e3e2;
     color: #333e44;
@@ -172,11 +175,26 @@ a:hover {
     .modal-img-sm {
         width: 100%;
     }
+    .modal-img {
+        width: 100%;
+        
+    }
+    /* .modal-body {
+        min-height: 100vw;
+    } */
+    #description {
+       text-align: left;
+       /* font-size: 1em;  */
+    }
 }
 /* normal screen */
 @media only screen and (min-width: 769px) {
     .thumbnail-img {
         max-width: 100%;
+    }
+    .modal-img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
 } 
