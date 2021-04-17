@@ -1,5 +1,6 @@
 body {
-    background-color: #222223;
+    background-color: #2d818f;
+    font-family: 'regulator-nova', sans-serif;
 }
 
 #index-background {
@@ -16,8 +17,9 @@ body {
 }
 #well-text {
     font-size: 6vw;
-    color: #689775;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333e44;
+    font-weight: 700;
+    font-family: 'regulator-nova', sans-serif;
 }
 #well-div {
     display: flex;
@@ -26,17 +28,20 @@ body {
 }
 #hello-text {
     font-size: 14vw;
-    color: #A33327;
-    text-shadow: 10px 10px #C7493A;
-    font-family: 'Bungee Inline', 'Impact', sans-serif; 
+    color: #e2e3e2;
+    text-shadow: 7px 7px #333e44;
+    /* color: #e2e3e2;
+    text-shadow: 7px 7px #942229; */
+    font-family: 'acier-bat-noir', 'Impact', sans-serif; 
 }
 #hello-div {
     text-align: center;
 }
 #there-text {
     font-size: 6vw;
-    color: #689775;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333e44;
+    font-family: 'regulator-nova', sans-serif;
+    font-weight: 700;
 }
 #there-div {
     display: flex;
@@ -50,16 +55,23 @@ body {
     justify-content: center;
 }
 #enter-button {
-    color: #AD9174;
+    color: #e2e3e2;
     border: 0px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 2vw;
 }
 #enter-button:hover {
-    text-shadow: 2px 2px #917164;
+    /* text-shadow: 2px 2px #d89846; */
+    color: #333e44;
+    text-shadow: 2px 2px #e2e3e2;
+}
+a {
+    text-decoration-line: none;
 }
 a:hover {
     text-decoration: none;
+    /* text-shadow: 2px 2px #d89846; */
+    color: #942229;
+    /* font-weight: 700; */
 }
 
 @media only screen and (max-width: 991px) {
@@ -67,10 +79,10 @@ a:hover {
         grid-template-columns: auto;
     }
     #well-div {
-        justify-content: center;
+        justify-content: start;
     }
     #there-div {
-        justify-content: center;
+        justify-content: end;
     }
     #well-text {
         font-size: 12vw;
