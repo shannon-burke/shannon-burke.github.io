@@ -12,6 +12,7 @@ body {
 
 #welcome-text-div {
     display: grid;
+    justify-content: center;
     grid-template-columns: auto auto auto;
     grid-gap: 1vw;
 }

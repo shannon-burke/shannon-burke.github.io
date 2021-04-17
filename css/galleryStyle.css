@@ -107,11 +107,18 @@ a:hover {
     font-size: 5vw;
     padding: 3vw;
 }
+.thumbnail-img {
+    width: 100%;
+}
 
 
 .modal-img {
     max-width: 100%;
     max-height: 100%;
+    margin-bottom: 4px;
+}
+.modal-img-sm {
+    width: 25%;
     margin-bottom: 4px;
 }
 .modal-carousel-img {
@@ -162,13 +169,14 @@ a:hover {
     .thumbnail-img {
         max-width: 100%;
     }
+    .modal-img-sm {
+        width: 100%;
+    }
 }
 /* normal screen */
 @media only screen and (min-width: 769px) {
     .thumbnail-img {
         max-width: 100%;
     }
-    .modal-img-sm {
-        max-width: 25%;
-    }
+
 } 
