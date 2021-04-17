@@ -79,11 +79,14 @@ a:hover {
         grid-template-columns: auto;
     }
     #well-div {
+        width: 90vw; 
         justify-content: start;
     }
     #there-div {
+        width: 90vw;
         justify-content: end;
     }
+
     #well-text {
         font-size: 12vw;
     }
