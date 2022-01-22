@@ -123,6 +123,7 @@ a:hover {
 }
 .mock-img {
     filter: drop-shadow(0px 0px 1px grey);
+    margin-top: 20px;
 }
 /* .modal-carousel-img {
     max-height: 100vh;
